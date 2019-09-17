@@ -1,4 +1,4 @@
-Ryan Zahrae's Github.io Portfolio
+## Ryan Zahrae's Github.io Portfolio
 
 ## Copyright and License
 
