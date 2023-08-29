@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
   <meta charset="utf-8" />
 
   <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
 
-  <meta
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    name="viewport"
-  />
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
 
   <title>Home | Ryan Zahrae</title>
 
@@ -16,20 +14,11 @@
 
   <meta property="og:locale" content="en_US" />
 
-  <link
-    rel="canonical"
-    href="http://ryanzahrae.com/"
-  />
+  <link rel="canonical" href="http://ryanzahrae.com/" />
 
-  <meta
-    property="og:url"
-    content="http://ryanzahrae.com/"
-  />
+  <meta property="og:url" content="http://ryanzahrae.com/" />
 
-  <meta
-    name="Ryan Zahrae"
-    content="Welcome to Ryan Zahrae's Portfolio."
-  />
+  <meta name="Ryan Zahrae" content="Welcome to Ryan Zahrae's Portfolio." />
 
   <link rel="icon" type="image/png" href="./assets/img/rz-favicon-32x32.png" />
 
@@ -43,55 +32,32 @@
 
   <meta name="twitter:site" content="@tailwindmade" />
   -->
-  <link
-    crossorigin="crossorigin"
-    href="https://fonts.gstatic.com"
-    rel="preconnect"
-  />
+  <link crossorigin="crossorigin" href="https://fonts.gstatic.com" rel="preconnect" />
 
-  <link
-    as="style"
+  <link as="style"
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-    rel="preload"
-  />
+    rel="preload" />
 
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
 
-  <link
-    href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 
-  <link
-    crossorigin="anonymous"
-    href="../dist/output.css"
-    media="screen"
-    rel="stylesheet"
-  />
-  
-  <script
-    defer
-    src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"
-  ></script>
+  <link crossorigin="anonymous" href="../dist/output.css" media="screen" rel="stylesheet" />
+
+  <script defer src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"></script>
 
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
-  
+
 </head>
 
 
-  <body
-    :class="{ 'overflow-hidden max-h-screen': mobileMenu }"
-    class="relative"
-    x-data="{ mobileMenu: false }"
-  >
-    
-    <div id="main" class="relative">
-      <div
-  x-data="{
+<body :class="{ 'overflow-hidden max-h-screen': mobileMenu }" class="relative" x-data="{ mobileMenu: false }">
+
+  <div id="main" class="relative">
+    <div x-data="{
     triggerNavItem(id) {
         $scroll(id)
     },
@@ -99,782 +65,652 @@
         mobileMenu = false;
         this.triggerNavItem(id)
     }
-}"
->
-  <div class="w-full z-50 top-0 py-3 sm:py-5  absolute
+}">
+      <div class="w-full z-50 top-0 py-3 sm:py-5  absolute
   ">
-  <div class="container flex items-center justify-between">
-    <div>
-      <a href="/">
-        <img src="./assets/img/rz_logo.png" class="w-24 lg:w-48" alt="Ryan Zahrae Logo" />
-      </a>
-    </div>
-    <div class="hidden lg:block">
-      <ul class="flex items-center">
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#about')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >About</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#services')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Expertise</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#portfolio')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Portfolio</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#contact')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Contact</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-      </ul>
-    </div>
-    <div class="block lg:hidden">
-      <button @click="mobileMenu = true">
-        <i class="bx bx-menu text-4xl text-white"></i>
-      </button>
-    </div>
-  </div>
-</div>
-
-<div
-  class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"
-  :class="{ 'opacity-100 pointer-events-auto': mobileMenu }"
->
-  <div
-    class="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3"
-  >
-    <button
-      class="absolute top-0 right-0 mt-4 mr-4"
-      @click="mobileMenu = false"
-    >
-      <img src="./assets/img/icon-close.svg" class="h-10 w-auto" alt="" />
-    </button>
-
-    <ul class="mt-8 flex flex-col">
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#about')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >About</span
-        >
-        
-      </li>
-
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#services')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Expertise</span
-        >
-        
-      </li>
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#portfolio')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Portfolio</span
-        >
-        
-      </li>
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#contact')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Contact</span
-        >
-        
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-
-<div><div
-  class="relative bg-cover bg-center bg-no-repeat py-8"
-  style="background-image: url(./assets/img/bg-hero.jpg)"
->
-  <div
-    class="absolute inset-0 z-20 bg-gradient-to-b from-hero-gradient-from to-grey-60 bg-cover bg-center bg-no-repeat"
-  ></div>
-
-  <div
-    class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48"
-  >
-    <div class="flex flex-col items-center justify-center lg:flex-row">
-      <div class="rounded-full border-8 border-primary shadow-xl">
-        <img
-          src="./assets/img/IMG_4589_compressed.jpg"
-          class="h-48 rounded-full sm:h-56"
-          alt="Picture of Ryan"
-        />
-      </div>
-      <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
-        <h1
-          class="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl"
-        >
-        👋Hi there, I'm Ryan Zahrae!
-        </h1>
-        <div
-          class="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start"
-        >
-          <div
-            class="flex items-center justify-center pl-0 sm:justify-start md:pl-1"
-          >
-            <p class="font-body text-lg text-white">Connect with Me!</p>
-            <div class="hidden sm:block">
-              <i class="bx bx-chevron-right text-3xl text-yellow"></i>
-            </div>
-          </div>
-          <div
-            class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
-          >
-            <a href="https://www.linkedin.com/in/ryanzahrae/" target="_blank" rel="noopener noreferrer">
-              <i
-                class="bx bxl-linkedin text-2xl text-white hover:text-blue"
-              ></i>
-            </a>
-            <a @click="triggerNavItem('#contact')" class="pl-2">
-              <i
-                class="bx bx-envelope text-2xl text-white hover:text-blue"
-              ></i>
+        <div class="container flex items-center justify-between">
+          <div>
+            <a href="/">
+              <img src="./assets/img/rz_logo.png" class="w-24 lg:w-48" alt="Ryan Zahrae Logo" />
             </a>
           </div>
+          <div class="hidden lg:block">
+            <ul class="flex items-center">
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#about')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">About</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#services')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Expertise</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#portfolio')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Portfolio</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+              <li class="group pl-6">
+
+                <span @click="triggerNavItem('#contact')"
+                  class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Contact</span>
+
+                <span class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
+              </li>
+
+            </ul>
+          </div>
+          <div class="block lg:hidden">
+            <button @click="mobileMenu = true">
+              <i class="bx bx-menu text-4xl text-white"></i>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
 
-<div class="bg-grey-60" id="about">
-  <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
-    <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
-      <h2
-        class="font-header text-4xl font-semibold text-primary sm:text-5xl lg:text-6xl"
-      >
-        About Me.
-      </h2>
-      <h4
-        class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-      >
-        I'm Ryan Zahrae: a UI, UX and Web Designer.
-      </h4>
-      <p class="pt-6 font-body leading-relaxed text-grey-10">
-        Hi there! My name is Ryan Zahrae, and I'm a graduate from the University of California, Irvine with a degree in Computer Informatics. 
-        I specialized in Human-Computer Interaction and fell in love with UI and UX design, as well as the study of what makes software intuitive. 
-        My roles in Customer Service, Technical Support and Web Design serve to strengthen my understanding of how to create products that are both appealing and user-friendly.
-      </p>
       <div
-        class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start"
-      >
-        <div class="flex items-center justify-center sm:justify-start">
-          <p class="font-body text-lg font-semibold text-grey-20">
-            Get in touch with me!
-          </p>
-          <div class="hidden sm:block">
-            <i class="bx bx-chevron-right text-2xl text-primary"></i>
-          </div>
-        </div>
-        <div
-          class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
-        >
-          <a href="https://www.linkedin.com/in/ryanzahrae/" target="_blank" rel="noopener noreferrer" class="pl-2">
-            <i
-              class="bx bxl-linkedin text-2xl text-primary hover:text-blue"
-            ></i>
-          </a>
-          <a @click="triggerNavItem('#contact')" class="pl-2">
-            <i
-              class="bx bx-envelope text-2xl text-primary hover:text-blue"
-            ></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
-      <div class="p-6 bg-grey-50 border-1 border-gradient-to-r from-hero-gradient-from to-blue rounded-lg shadow-2xl">
-        <h4 class="pb-3 font-header text-4xl font-semibold text-primary sm:text-2xl lg:text-3xl">My Tools.</h4>
-        <div class="grid grid-cols-4 gap-4">
-          <div><!-- 1 -->
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="48" height="48"
-            viewBox="0 0 48 48" role="img">
-            <title>HTML5 Logo</title>
-            <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
-            </svg>
-          </div>
-          <div><!-- 2 -->
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="48" height="48"
-            viewBox="0 0 48 48" role="img">
-            <title>CSS3 Logo</title>
-            <linearGradient id="TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1" x1="16.33" x2="32.293" y1="-2.748" y2="41.109" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"></stop><stop offset="1" stop-color="#007ad9"></stop></linearGradient><path fill="url(#TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1)" d="M7.192,7.176l2.627,29.77c0.109,1.237,0.97,2.28,2.164,2.621l10.643,3.041	c0.898,0.257,1.849,0.257,2.747,0l10.643-3.041c1.194-0.341,2.055-1.383,2.164-2.621l2.627-29.77C40.911,6.006,39.99,5,38.816,5	H9.184C8.01,5,7.089,6.006,7.192,7.176z"></path><path fill="#35c1f1" d="M24,8v31.9l9.876-2.822c0.797-0.228,1.371-0.924,1.443-1.749l2.286-26.242	C37.656,8.502,37.196,8,36.609,8H24z"></path><path fill="#fff" d="M33.1,13H24v4h4.9l-0.3,4H24v4h4.4l-0.3,4.5L24,30.9v4.2l7.9-2.6L32.6,21l0,0L33.1,13z"></path><path fill="#d6e0e9" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4	L19.8,27z"></path><path d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M34.164,12H33.1H24h-9.2h-1.078l0.081,1.075l0.3,4L14.172,18H15.1H24h3.822l-0.15,2H24h-4.6h-1.051 l0.052,1.05l0.2,4L18.649,26H15.8h-1.056l0.058,1.054l0.3,5.5l0.037,0.682l0.649,0.214l7.9,2.6L24,36.153l0.313-0.103l7.9-2.6 l0.644-0.212l0.041-0.677l0.7-11.5l0.5-7.998L34.164,12L34.164,12z M20.761,26H24h3.331l-0.185,2.769L24,29.843l-3.128-1.068 l-0.073-1.815L20.761,26L20.761,26z" opacity=".05"></path><path d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M33.632,12.5H33.1H24h-9.2h-0.539l0.04,0.537l0.3,4l0.035,0.463H15.1H24h4.361l-0.225,3H24h-4.6h-0.526 l0.026,0.525l0.2,4l0.024,0.475H19.6H24h3.866l-0.242,3.634L24,30.372l-3.614-1.234L20.3,26.98L20.28,26.5H19.8h-4h-0.528 l0.029,0.527l0.3,5.5l0.019,0.341l0.324,0.107l7.9,2.6L24,35.626l0.156-0.051l7.9-2.6l0.322-0.106l0.021-0.339l0.7-11.5l0.5-7.999 L33.632,12.5L33.632,12.5z" opacity=".07"></path>
-            </svg>
-          </div>
-          <div><!-- 3 -->
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="48" height="48"
-            viewBox="0 0 50 50" role="img">
-            <title>JavaScript Logo</title>
-            <path d="M 43.335938 4 L 6.667969 4 C 5.195313 4 4 5.195313 4 6.667969 L 4 43.332031 C 4 44.804688 5.195313 46 6.667969 46 L 43.332031 46 C 44.804688 46 46 44.804688 46 43.335938 L 46 6.667969 C 46 5.195313 44.804688 4 43.335938 4 Z M 27 36.183594 C 27 40.179688 24.65625 42 21.234375 42 C 18.140625 42 15.910156 39.925781 15 38 L 18.144531 36.097656 C 18.75 37.171875 19.671875 38 21 38 C 22.269531 38 23 37.503906 23 35.574219 L 23 23 L 27 23 Z M 35.675781 42 C 32.132813 42 30.121094 40.214844 29 38 L 32 36 C 32.816406 37.335938 33.707031 38.613281 35.589844 38.613281 C 37.171875 38.613281 38 37.824219 38 36.730469 C 38 35.425781 37.140625 34.960938 35.402344 34.199219 L 34.449219 33.789063 C 31.695313 32.617188 29.863281 31.148438 29.863281 28.039063 C 29.863281 25.179688 32.046875 23 35.453125 23 C 37.878906 23 39.621094 23.84375 40.878906 26.054688 L 37.910156 27.964844 C 37.253906 26.789063 36.550781 26.328125 35.453125 26.328125 C 34.335938 26.328125 33.628906 27.039063 33.628906 27.964844 C 33.628906 29.109375 34.335938 29.570313 35.972656 30.28125 L 36.925781 30.691406 C 40.171875 32.078125 42 33.496094 42 36.683594 C 42 40.117188 39.300781 42 35.675781 42 Z"></path>
-            </svg>
-          </div>
-          <div><!-- 4 -->
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="48" height="48"
-            viewBox="0 0 24 24" role="img">
-            <title>WordPress Logo</title>
-            <path d="M 12 2 C 6.5 2 2 6.5 2 12 C 2 17.5 6.5 22 12 22 C 17.5 22 22 17.5 22 12 C 22 6.5 17.5 2 12 2 z M 12 3 C 17 3 21 7 21 12 C 21 17 17 21 12 21 C 7 21 3 17 3 12 C 3 7 7 3 12 3 z M 12 4 C 9.2 4 6.7007812 5.3996094 5.3007812 7.5996094 L 5.8007812 7.5996094 C 6.7007813 7.5996094 8 7.5 8 7.5 C 8.4 7.5 8.4996094 8.0992188 8.0996094 8.1992188 C 8.0996094 8.1992188 7.6992187 8.3007812 7.1992188 8.3007812 L 9.9003906 16.199219 L 11.699219 10.900391 L 10.699219 8.1992188 C 10.299219 8.1992188 9.9003906 8.0996094 9.9003906 8.0996094 C 9.5003906 8.0996094 9.5 7.4003906 10 7.4003906 C 10 7.4003906 11.299609 7.5 12.099609 7.5 C 12.899609 7.5 14.199219 7.4003906 14.199219 7.4003906 C 14.599219 7.4003906 14.700781 7.9996094 14.300781 8.0996094 C 14.300781 8.0996094 13.900391 8.1992187 13.400391 8.1992188 L 16.300781 16.199219 L 17.099609 13.5 C 17.099609 12.5 17.400391 11.7 17.400391 11 C 17.400391 10.2 16.999219 9.9003906 16.699219 9.4003906 C 16.299219 8.7003906 16 8.2 16 7.5 C 16 6.8 16.600781 6.0996094 17.300781 6.0996094 L 17.400391 6.0996094 C 16.000391 4.7996094 14.1 4 12 4 z M 19 8.1992188 C 19 8.4992188 18.999609 8.7 19.099609 9 C 19.099609 9.8 19.000781 10.999609 18.800781 11.599609 C 18.200781 13.499609 16.400391 18.699219 16.400391 18.699219 C 16.400391 18.699219 16.499609 18.699609 16.599609 18.599609 C 18.699609 17.199609 20 14.8 20 12 C 20 10.6 19.6 9.2992187 19 8.1992188 z M 4.6992188 8.6992188 C 4.1992188 9.6992188 4 10.8 4 12 C 4 15.2 5.8 17.899219 8.5 19.199219 L 4.6992188 8.6992188 z M 12.099609 12.699219 L 9.6992188 19.699219 C 10.399219 19.899219 11.2 20 12 20 C 12.9 20 13.799219 19.8 14.699219 19.5 C 14.699219 19.5 14.699609 19.400391 14.599609 19.400391 L 12.099609 12.699219 z"></path>
-            </svg>
-          </div>
-          <div><!-- 5 -->
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="48" height="48"
-            viewBox="0 0 48 48" role="img">
-            <title>Bootstrap Logo</title>
-            <path fill="#673ab7" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5 V37z"></path><path fill="#fff" d="M33.03,25.6c-0.65-0.9-1.59-1.52-2.8-1.85c0,0,1.02-0.37,1.94-1.75c0.55-0.88,0.83-1.94,0.83-3.18 c0-2.15-0.78-3.8-2.34-4.93C29.1,12.76,27.34,12,24.35,12H15v24h10.43c2.83-0.02,4.96-0.63,6.41-1.8c1.44-1.19,2.16-2.95,2.16-5.3 C34,27.6,33.68,26.5,33.03,25.6z M21,16c0,0,4.17,0,4.25,0c1.52,0,2.75,1.23,2.75,2.75c0,1.52-1.23,2.75-2.75,2.75 c-0.08,0-4.25,0-4.25,0V16z M26,32h-5v-6h5c1.66,0,3,1.34,3,3C29,30.66,27.66,32,26,32z"></path>
-            </svg>
-          </div>
-          <div><!-- 6 -->
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="48" height="48"
-            viewBox="0 0 48 48" role="img">
-            <title>TailwindCSS Logo</title>
-            <path fill="#00acc1" d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"></path>
-            </svg>
-          </div>
-          <div><!-- 7 -->
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="48" height="48"
-            viewBox="0 0 48 48" role="img">
-            <title>Figma Logo</title>
-            <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path><path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path><path fill="#66bb6a" d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"></path><path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path><circle cx="32" cy="24" r="7" fill="#29b6f6"></circle>
-            </svg>
-          </div>
-          <div><!-- 8 -->
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="48" height="48"
-            viewBox="0 0 48 48" role="img">
-            <title>Adobe Xd Logo</title>
-            <path fill="#ff41c8" d="M6,10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28c0,2.209-1.791,4-4,4H10c-2.209,0-4-1.791-4-4 V10z"></path><path fill="#16020b" d="M9,9v30h30V9H9z M19.093,21.695l1.914-4.883h3.291l-3.34,7.051l3.418,7.168h-3.33l-1.953-4.971 l-1.943,4.971h-3.33l3.418-7.168l-3.35-7.051h3.291L19.093,21.695z M25.069,25.426c0-1.732,0.293-3.024,0.879-3.877 s1.438-1.279,2.559-1.279c0.813,0,1.491,0.352,2.031,1.055v-5.293h2.783v15h-2.51l-0.127-1.074c-0.566,0.847-1.296,1.27-2.188,1.27 c-1.106,0-1.951-0.423-2.534-1.27s-0.881-2.09-0.894-3.73V25.426z M27.843,26.119c0,1.042,0.11,1.77,0.332,2.183 s0.596,0.62,1.123,0.62c0.547,0,0.96-0.244,1.24-0.732v-4.824c-0.273-0.521-0.684-0.781-1.23-0.781 c-0.508,0-0.879,0.205-1.113,0.615s-0.352,1.14-0.352,2.188V26.119z"></path>
-            </svg>
-          </div>
-        </div>
-      </div>
-  </div>
-  </div>
-</div>
+        class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"
+        :class="{ 'opacity-100 pointer-events-auto': mobileMenu }">
+        <div class="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3">
+          <button class="absolute top-0 right-0 mt-4 mr-4" @click="mobileMenu = false">
+            <img src="./assets/img/icon-close.svg" class="h-10 w-auto" alt="" />
+          </button>
 
-<div class="bg-grey-50">
-  <div class="container py-16 md:py-20" id="services">
-    <h2
-      class="text-center font-header text-4xl font-semibold text-primary sm:text-5xl lg:text-6xl"
-    >
-      Here's what I'm good at.
-    </h2>
-    <h3
-      class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-    >
-      These are my areas of expertise.
-    </h3>
+          <ul class="mt-8 flex flex-col">
 
-    <div
-      class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
-    >
-      <div class="group rounded px-8 py-12 shadow-xl hover:bg-primary">
-        <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-          <div class="hidden group-hover:block">
-            <img
-              src="./assets/img/icon-development-white.svg"
-              alt="development icon"
-            />
-          </div>
-          <div class="block group-hover:hidden">
-            <img
-              src="./assets/img/icon-development-black.svg"
-              alt="development icon"
-            />
-          </div>
-        </div>
-        <div class="text-center">
-          <h3
-            class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-          >
-            Web Development
-          </h3>
-          <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-            My experience with multiple frameworks ensure I can take projects from idea to reality, choosing the tool that best fits the job.
-          </p>
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#about')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">About</span>
+
+            </li>
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#services')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Expertise</span>
+
+            </li>
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#portfolio')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Portfolio</span>
+
+            </li>
+
+            <li class="py-2">
+
+              <span @click="triggerMobileNavItem('#contact')"
+                class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Contact</span>
+
+            </li>
+
+          </ul>
         </div>
       </div>
-      <div class="group rounded px-8 py-12 shadow-xl hover:bg-primary">
-        <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-          <div class="hidden group-hover:block">
-            <img
-              src="./assets/img/icon-content-white.svg"
-              alt="content marketing icon"
-            />
-          </div>
-          <div class="block group-hover:hidden">
-            <img
-              src="./assets/img/icon-content-black.svg"
-              alt="content marketing icon"
-            />
-          </div>
-        </div>
-        <div class="text-center">
-          <h3
-            class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-          >
-            Wordpress Management
-          </h3>
-          <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-            From theme development and plugin management to full site creations, I have experience building WordPress sites across multiple industries.
-          </p>
-        </div>
-      </div>
-      <div class="group rounded px-8 py-12 shadow-xl hover:bg-primary">
-        <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-          <div class="hidden group-hover:block">
-            <img
-              src="./assets/img/icon-mobile-white.svg"
-              alt="Mobile Application icon"
-            />
-          </div>
-          <div class="block group-hover:hidden">
-            <img
-              src="./assets/img/icon-mobile-black.svg"
-              alt="Mobile Application icon"
-            />
-          </div>
-        </div>
-        <div class="text-center">
-          <h3
-            class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-          >
-            Responsive Design
-          </h3>
-          <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-            My knowledge in Human-Computer Interaction helps me develop products that focus on the user's environment, whether they be on a phone, a tablet, a desktop - or even a smart refrigerator. ;)
-          </p>
-        </div>
-      </div>
-      <div class="group rounded px-8 py-12 shadow-xl hover:bg-primary">
-        <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-          <div class="hidden group-hover:block">
-            <img
-              src="./assets/img/icon-email-white.svg"
-              alt="Email Marketing icon"
-            />
-          </div>
-          <div class="block group-hover:hidden">
-            <img
-              src="./assets/img/icon-email-black.svg"
-              alt="Email Marketing icon"
-            />
-          </div>
-        </div>
-        <div class="text-center">
-          <h3
-            class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-          >
-            Email Development
-          </h3>
-          <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-            From the most basic HTML email template to advanced layouts in MJML, I have experience creating various marketing and internal email designs.
-          </p>
-        </div>
-      </div>
-      <div class="group rounded px-8 py-12 shadow-xl hover:bg-primary">
-        <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-          <div class="hidden group-hover:block">
-            <img
-              src="./assets/img/icon-design-white.svg"
-              alt="Theme Design icon"
-            />
-          </div>
-          <div class="block group-hover:hidden">
-            <img
-              src="./assets/img/icon-design-black.svg"
-              alt="Theme Design icon"
-            />
-          </div>
-        </div>
-        <div class="text-center">
-          <h3
-            class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-          >
-            Marketing & SEO
-          </h3>
-          <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-            Utilizing tools like Structured Schema Data, Google Search Console/Analytics and ActiveCampaign, finding ways to harness prospective traffic goes hand in hand with good UX.
-          </p>
-        </div>
-      </div>
-      <div class="group rounded px-8 py-12 shadow-xl hover:bg-primary">
-        <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-          <div class="hidden group-hover:block">
-            <img
-              src="./assets/img/icon-graphics-white.svg"
-              alt="Graphic Design icon"
-            />
-          </div>
-          <div class="block group-hover:hidden">
-            <img
-              src="./assets/img/icon-graphics-black.svg"
-              alt="Graphic Design icon"
-            />
-          </div>
-        </div>
-        <div class="text-center">
-          <h3
-            class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-          >
-            UX/UI Design
-          </h3>
-          <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-            My educational and development backgrounds help me stay human-first in my design philosophy, whether it be working with mockups in Adobe XD or testing already-built platforms.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="bg-grey-60">
-  <div class="container py-16 md:py-20" id="portfolio">
-    <h2
-      class="text-center font-header text-4xl font-semibold text-primary sm:text-5xl lg:text-6xl"
-    >
-      Here's My Portfolio.
-    </h2>
-    <h3
-      class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-    >
-      These are some examples of my past work.
-    </h3>
 
-    <div
-      class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2"
-    >
-      <a
-        href="https://qt.itsupportguys.com/"
-        target="_blank" rel="noopener noreferrer"
-        class="mx-auto transform transition-all hover:scale-105 md:mx-0"
-      >
-        <img
-          src="./assets/img/portfolio/qt_itsg_compressed.png"
-          class="w-full shadow-2xl"
-          alt="portfolio image"
-        />
-      </a>
-      <a
-        href="https://foxbox.io/"
-        target="_blank" rel="noopener noreferrer"
-        class="mx-auto transform transition-all hover:scale-105 md:mx-0"
-      >
-        <img
-          src="./assets/img/portfolio/foxbox_compressed.png"
-          class="w-full shadow-2xl"
-          alt="portfolio image"
-        />
-      </a>
-      <a
-      href="https://app.campizza.com/"
-      target="_blank" rel="noopener noreferrer"
-      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
-      >
-      <img
-        src="./assets/img/portfolio/app_campizza_compressed.png"
-        class="w-full shadow-2xl"
-        alt="portfolio image"
-      />
-      </a>
-      <a
-      href="https://itsupportguys.com/"
-      target="_blank" rel="noopener noreferrer"
-      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
-      >
-      <img
-        src="./assets/img/portfolio/itsg_compressed.png"
-        class="w-full shadow-2xl"
-        alt="portfolio image"
-      />
-      </a>
-    </div>
-  </div>
-</div>
-
-<div class="bg-grey-50 py-16 md:py-20" id="work">
-  <h2
-    class="text-center font-header text-4xl font-semibold text-primary sm:text-5xl lg:text-6xl"
-  >
-    Here's My Work Experience.
-  </h2>
-  <h3
-    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-  >
-    These are some of my past works.
-  </h3>
-
-  <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
-    <span
-      class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"
-    ></span>
-
-    <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
-      <div class="md:w-2/5">
-        <div class="flex justify-center md:justify-start">
-          <span class="shrink-0">
-            <img
-              src="./assets/img/itsg_alt_logo.png"
-              class="h-auto w-32"
-              alt="company logo"
-            />
-          </span>
-          <div class="relative ml-3 hidden w-full md:block">
-            <span
-              class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"
-            ></span>
+      <div>
+        <div class="relative bg-cover bg-center bg-no-repeat py-8"
+          style="background-image: url(./assets/img/bg-hero.jpg)">
+          <div
+            class="absolute inset-0 z-20 bg-gradient-to-b from-hero-gradient-from to-grey-60 bg-cover bg-center bg-no-repeat">
           </div>
-        </div>
-      </div>
-      <div class="md:w-3/5">
-        <div class="relative flex md:pl-18">
-          <span
-            class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
-          ></span>
 
-          <div class="mt-1 flex">
-            <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
-            <div class="md:-mt-1 md:pl-8">
-              <span class="block font-body font-bold text-grey-40"
-                >May 2020 - Current</span
-              >
-              <span
-                class="block pt-2 font-header text-xl font-bold uppercase text-primary"
-                >Web Developer</span
-              >
-              <div class="pt-2">
-                <ul class="list-disc block font-body text-black">
-                  <li>Overhauled company website to achieve record SEO ratings and traffic YOY, increasing speed metrics by nearly 80%.</li>
-                  <li>Spearheaded projects to improve internal processes and ticketing questionnaires between both external clients and internal employees.</li>
-                  <li>Handled all front-end development of a new, ground-up price quoting platform that brought in new leads and potential customers while providing the company more information up front about a client's needs.</li>
-                  <li>Developed front-end interfaces for an internal call transcription platform for usage by the company's Help Desk.</li>
-                  <li>Managed company CRM and automations for following up and engaging with potential leads.</li>
-                </ul>
+          <div class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48">
+            <div class="flex flex-col items-center justify-center lg:flex-row">
+              <div class="rounded-full border-8 border-primary shadow-xl">
+                <img src="./assets/img/IMG_4589_compressed.jpg" class="h-48 rounded-full sm:h-56"
+                  alt="Picture of Ryan" />
+              </div>
+              <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
+                <h1 class="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl">
+                  👋Hi there, I'm Ryan Zahrae!
+                </h1>
+                <div class="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start">
+                  <div class="flex items-center justify-center pl-0 sm:justify-start md:pl-1">
+                    <p class="font-body text-lg text-white">Connect with Me!</p>
+                    <div class="hidden sm:block">
+                      <i class="bx bx-chevron-right text-3xl text-yellow"></i>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
+                    <a href="https://www.linkedin.com/in/ryanzahrae/" target="_blank" rel="noopener noreferrer">
+                      <i class="bx bxl-linkedin text-2xl text-white hover:text-blue"></i>
+                    </a>
+                    <a @click="triggerNavItem('#contact')" class="pl-2">
+                      <i class="bx bx-envelope text-2xl text-white hover:text-blue"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
-      <div class="md:w-2/5">
-        <div class="flex justify-center md:justify-start">
-          <span class="shrink-0">
-            <img
-              src="./assets/img/codenko_logo.png"
-              class="h-auto w-32"
-              alt="company logo"
-            />
-          </span>
-          <div class="relative ml-3 hidden w-full md:block">
-            <span
-              class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"
-            ></span>
-          </div>
-        </div>
-      </div>
-      <div class="md:w-3/5">
-        <div class="relative flex md:pl-18">
-          <span
-            class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
-          ></span>
 
-          <div class="mt-1 flex">
-            <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
-            <div class="md:-mt-1 md:pl-8">
-              <span class="block font-body font-bold text-grey-40"
-                >2017 - 2021</span
-              >
-              <span
-                class="block pt-2 font-header text-xl font-bold uppercase text-primary"
-                >Web Developer, UI/UX</span
-              >
-              <div class="pt-2">
-                <ul class="list-disc block font-body text-black">
-                  <li>Developed and maintained multiple projects for clients ranging from full website development, redesigns, performance load-time modifications and migrations.</li>
-                  <li>Used prototyping software/Agile processes to quickly iterate on ideas and designs based on client feedback and direction.</li>
-                  <li>Produced documentation on projects involving user flows, personas, storyboards, etc. for presentation internally and to clients.</li>
-                  <li>Worked with multiple teams to develop verbiage that would allow for increased web visibility and SEO performance.</li>
-                </ul>
+        <div class="bg-grey-60" id="about">
+          <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
+            <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
+              <h2 class="font-header text-4xl font-semibold text-primary sm:text-5xl lg:text-6xl">
+                About Me.
+              </h2>
+              <h4 class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+                I'm Ryan Zahrae: a UI, UX and Web Designer.
+              </h4>
+              <p class="pt-6 font-body leading-relaxed text-grey-10">
+                Hi there! My name is Ryan Zahrae, and I'm a graduate from the University of California, Irvine with a
+                degree in Computer Informatics.
+                I specialized in Human-Computer Interaction and fell in love with UI and UX design, as well as the study
+                of what makes software intuitive.
+                My roles in Customer Service, Technical Support and Web Design serve to strengthen my understanding of
+                how to create products that are both appealing and user-friendly.
+              </p>
+              <div class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
+                <div class="flex items-center justify-center sm:justify-start">
+                  <p class="font-body text-lg font-semibold text-grey-20">
+                    Get in touch with me!
+                  </p>
+                  <div class="hidden sm:block">
+                    <i class="bx bx-chevron-right text-2xl text-primary"></i>
+                  </div>
+                </div>
+                <div class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0">
+                  <a href="https://www.linkedin.com/in/ryanzahrae/" target="_blank" rel="noopener noreferrer"
+                    class="pl-2">
+                    <i class="bx bxl-linkedin text-2xl text-primary hover:text-blue"></i>
+                  </a>
+                  <a @click="triggerNavItem('#contact')" class="pl-2">
+                    <i class="bx bx-envelope text-2xl text-primary hover:text-blue"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
+              <div
+                class="p-6 bg-grey-50 border-1 border-gradient-to-r from-hero-gradient-from to-blue rounded-lg shadow-2xl">
+                <h4 class="pb-3 font-header text-4xl font-semibold text-primary sm:text-2xl lg:text-3xl">My Tools.</h4>
+                <div class="grid grid-cols-4 gap-4">
+                  <div><!-- 1 -->
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
+                      role="img">
+                      <title>HTML5 Logo</title>
+                      <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
+                      <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
+                      <path fill="#FFF"
+                        d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path>
+                      <path fill="#EEE"
+                        d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div><!-- 2 -->
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
+                      role="img">
+                      <title>CSS3 Logo</title>
+                      <linearGradient id="TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1" x1="16.33" x2="32.293" y1="-2.748"
+                        y2="41.109" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#2aa4f4"></stop>
+                        <stop offset="1" stop-color="#007ad9"></stop>
+                      </linearGradient>
+                      <path fill="url(#TQDriqswrKwPOniLrPT12a_7gdY5qNXaKC0_gr1)"
+                        d="M7.192,7.176l2.627,29.77c0.109,1.237,0.97,2.28,2.164,2.621l10.643,3.041	c0.898,0.257,1.849,0.257,2.747,0l10.643-3.041c1.194-0.341,2.055-1.383,2.164-2.621l2.627-29.77C40.911,6.006,39.99,5,38.816,5	H9.184C8.01,5,7.089,6.006,7.192,7.176z">
+                      </path>
+                      <path fill="#35c1f1"
+                        d="M24,8v31.9l9.876-2.822c0.797-0.228,1.371-0.924,1.443-1.749l2.286-26.242	C37.656,8.502,37.196,8,36.609,8H24z">
+                      </path>
+                      <path fill="#fff"
+                        d="M33.1,13H24v4h4.9l-0.3,4H24v4h4.4l-0.3,4.5L24,30.9v4.2l7.9-2.6L32.6,21l0,0L33.1,13z"></path>
+                      <path fill="#d6e0e9"
+                        d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4	L19.8,27z">
+                      </path>
+                      <path
+                        d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M34.164,12H33.1H24h-9.2h-1.078l0.081,1.075l0.3,4L14.172,18H15.1H24h3.822l-0.15,2H24h-4.6h-1.051 l0.052,1.05l0.2,4L18.649,26H15.8h-1.056l0.058,1.054l0.3,5.5l0.037,0.682l0.649,0.214l7.9,2.6L24,36.153l0.313-0.103l7.9-2.6 l0.644-0.212l0.041-0.677l0.7-11.5l0.5-7.998L34.164,12L34.164,12z M20.761,26H24h3.331l-0.185,2.769L24,29.843l-3.128-1.068 l-0.073-1.815L20.761,26L20.761,26z"
+                        opacity=".05"></path>
+                      <path
+                        d="M33.1,13l-0.5,8l-0.7,11.5L24,35.1l-7.9-2.6L15.8,27h4l0.1,2.5l4.1,1.4l4.1-1.4l0.3-4.5H24h-4.4l-0.2-4H24h4.6l0.3-4H24 h-8.9l-0.3-4H24H33.1 M33.632,12.5H33.1H24h-9.2h-0.539l0.04,0.537l0.3,4l0.035,0.463H15.1H24h4.361l-0.225,3H24h-4.6h-0.526 l0.026,0.525l0.2,4l0.024,0.475H19.6H24h3.866l-0.242,3.634L24,30.372l-3.614-1.234L20.3,26.98L20.28,26.5H19.8h-4h-0.528 l0.029,0.527l0.3,5.5l0.019,0.341l0.324,0.107l7.9,2.6L24,35.626l0.156-0.051l7.9-2.6l0.322-0.106l0.021-0.339l0.7-11.5l0.5-7.999 L33.632,12.5L33.632,12.5z"
+                        opacity=".07"></path>
+                    </svg>
+                  </div>
+                  <div><!-- 3 -->
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 50 50"
+                      role="img">
+                      <title>JavaScript Logo</title>
+                      <path
+                        d="M 43.335938 4 L 6.667969 4 C 5.195313 4 4 5.195313 4 6.667969 L 4 43.332031 C 4 44.804688 5.195313 46 6.667969 46 L 43.332031 46 C 44.804688 46 46 44.804688 46 43.335938 L 46 6.667969 C 46 5.195313 44.804688 4 43.335938 4 Z M 27 36.183594 C 27 40.179688 24.65625 42 21.234375 42 C 18.140625 42 15.910156 39.925781 15 38 L 18.144531 36.097656 C 18.75 37.171875 19.671875 38 21 38 C 22.269531 38 23 37.503906 23 35.574219 L 23 23 L 27 23 Z M 35.675781 42 C 32.132813 42 30.121094 40.214844 29 38 L 32 36 C 32.816406 37.335938 33.707031 38.613281 35.589844 38.613281 C 37.171875 38.613281 38 37.824219 38 36.730469 C 38 35.425781 37.140625 34.960938 35.402344 34.199219 L 34.449219 33.789063 C 31.695313 32.617188 29.863281 31.148438 29.863281 28.039063 C 29.863281 25.179688 32.046875 23 35.453125 23 C 37.878906 23 39.621094 23.84375 40.878906 26.054688 L 37.910156 27.964844 C 37.253906 26.789063 36.550781 26.328125 35.453125 26.328125 C 34.335938 26.328125 33.628906 27.039063 33.628906 27.964844 C 33.628906 29.109375 34.335938 29.570313 35.972656 30.28125 L 36.925781 30.691406 C 40.171875 32.078125 42 33.496094 42 36.683594 C 42 40.117188 39.300781 42 35.675781 42 Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div><!-- 4 -->
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 24 24"
+                      role="img">
+                      <title>WordPress Logo</title>
+                      <path
+                        d="M 12 2 C 6.5 2 2 6.5 2 12 C 2 17.5 6.5 22 12 22 C 17.5 22 22 17.5 22 12 C 22 6.5 17.5 2 12 2 z M 12 3 C 17 3 21 7 21 12 C 21 17 17 21 12 21 C 7 21 3 17 3 12 C 3 7 7 3 12 3 z M 12 4 C 9.2 4 6.7007812 5.3996094 5.3007812 7.5996094 L 5.8007812 7.5996094 C 6.7007813 7.5996094 8 7.5 8 7.5 C 8.4 7.5 8.4996094 8.0992188 8.0996094 8.1992188 C 8.0996094 8.1992188 7.6992187 8.3007812 7.1992188 8.3007812 L 9.9003906 16.199219 L 11.699219 10.900391 L 10.699219 8.1992188 C 10.299219 8.1992188 9.9003906 8.0996094 9.9003906 8.0996094 C 9.5003906 8.0996094 9.5 7.4003906 10 7.4003906 C 10 7.4003906 11.299609 7.5 12.099609 7.5 C 12.899609 7.5 14.199219 7.4003906 14.199219 7.4003906 C 14.599219 7.4003906 14.700781 7.9996094 14.300781 8.0996094 C 14.300781 8.0996094 13.900391 8.1992187 13.400391 8.1992188 L 16.300781 16.199219 L 17.099609 13.5 C 17.099609 12.5 17.400391 11.7 17.400391 11 C 17.400391 10.2 16.999219 9.9003906 16.699219 9.4003906 C 16.299219 8.7003906 16 8.2 16 7.5 C 16 6.8 16.600781 6.0996094 17.300781 6.0996094 L 17.400391 6.0996094 C 16.000391 4.7996094 14.1 4 12 4 z M 19 8.1992188 C 19 8.4992188 18.999609 8.7 19.099609 9 C 19.099609 9.8 19.000781 10.999609 18.800781 11.599609 C 18.200781 13.499609 16.400391 18.699219 16.400391 18.699219 C 16.400391 18.699219 16.499609 18.699609 16.599609 18.599609 C 18.699609 17.199609 20 14.8 20 12 C 20 10.6 19.6 9.2992187 19 8.1992188 z M 4.6992188 8.6992188 C 4.1992188 9.6992188 4 10.8 4 12 C 4 15.2 5.8 17.899219 8.5 19.199219 L 4.6992188 8.6992188 z M 12.099609 12.699219 L 9.6992188 19.699219 C 10.399219 19.899219 11.2 20 12 20 C 12.9 20 13.799219 19.8 14.699219 19.5 C 14.699219 19.5 14.699609 19.400391 14.599609 19.400391 L 12.099609 12.699219 z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div><!-- 5 -->
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
+                      role="img">
+                      <title>Bootstrap Logo</title>
+                      <path fill="#673ab7"
+                        d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5 V37z">
+                      </path>
+                      <path fill="#fff"
+                        d="M33.03,25.6c-0.65-0.9-1.59-1.52-2.8-1.85c0,0,1.02-0.37,1.94-1.75c0.55-0.88,0.83-1.94,0.83-3.18 c0-2.15-0.78-3.8-2.34-4.93C29.1,12.76,27.34,12,24.35,12H15v24h10.43c2.83-0.02,4.96-0.63,6.41-1.8c1.44-1.19,2.16-2.95,2.16-5.3 C34,27.6,33.68,26.5,33.03,25.6z M21,16c0,0,4.17,0,4.25,0c1.52,0,2.75,1.23,2.75,2.75c0,1.52-1.23,2.75-2.75,2.75 c-0.08,0-4.25,0-4.25,0V16z M26,32h-5v-6h5c1.66,0,3,1.34,3,3C29,30.66,27.66,32,26,32z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div><!-- 6 -->
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
+                      role="img">
+                      <title>TailwindCSS Logo</title>
+                      <path fill="#00acc1"
+                        d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div><!-- 7 -->
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
+                      role="img">
+                      <title>Figma Logo</title>
+                      <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path>
+                      <path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path>
+                      <path fill="#66bb6a"
+                        d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z">
+                      </path>
+                      <path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path>
+                      <circle cx="32" cy="24" r="7" fill="#29b6f6"></circle>
+                    </svg>
+                  </div>
+                  <div><!-- 8 -->
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48"
+                      role="img">
+                      <title>Adobe Xd Logo</title>
+                      <path fill="#ff41c8"
+                        d="M6,10c0-2.209,1.791-4,4-4h28c2.209,0,4,1.791,4,4v28c0,2.209-1.791,4-4,4H10c-2.209,0-4-1.791-4-4 V10z">
+                      </path>
+                      <path fill="#16020b"
+                        d="M9,9v30h30V9H9z M19.093,21.695l1.914-4.883h3.291l-3.34,7.051l3.418,7.168h-3.33l-1.953-4.971 l-1.943,4.971h-3.33l3.418-7.168l-3.35-7.051h3.291L19.093,21.695z M25.069,25.426c0-1.732,0.293-3.024,0.879-3.877 s1.438-1.279,2.559-1.279c0.813,0,1.491,0.352,2.031,1.055v-5.293h2.783v15h-2.51l-0.127-1.074c-0.566,0.847-1.296,1.27-2.188,1.27 c-1.106,0-1.951-0.423-2.534-1.27s-0.881-2.09-0.894-3.73V25.426z M27.843,26.119c0,1.042,0.11,1.77,0.332,2.183 s0.596,0.62,1.123,0.62c0.547,0,0.96-0.244,1.24-0.732v-4.824c-0.273-0.521-0.684-0.781-1.23-0.781 c-0.508,0-0.879,0.205-1.113,0.615s-0.352,1.14-0.352,2.188V26.119z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
-      <div class="md:w-2/5">
-        <div class="flex justify-center md:justify-start">
-          <span class="shrink-0">
-            <img
-              src="./assets/img/foxbox_logo.png"
-              class="h-auto w-32"
-              alt="company logo"
-            />
-          </span>
-          <div class="relative ml-3 hidden w-full md:block">
-            <span
-              class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"
-            ></span>
-          </div>
-        </div>
-      </div>
-      <div class="md:w-3/5">
-        <div class="relative flex md:pl-18">
-          <span
-            class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
-          ></span>
 
-          <div class="mt-1 flex">
-            <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
-            <div class="md:-mt-1 md:pl-8">
-              <span class="block font-body font-bold text-grey-40"
-                >Feb 2015 - Current
-              </span>
-              <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">
-                UI Design & Service/Logistics
-              </span>
-              <div class="pt-2">
-                <ul class="list-disc block font-body text-black">
-                  <li>Oversaw multiple support online channels and help-desk services (Zendesk, E-Mail, Discord, Twitter, Facebook, Shopify) to bring an exceptional quality of customer support & issue mitigation.</li>
-                  <li>Assisted with UI, UX, and CSS issues in site build and updates.</li>
-                </ul>
+        <div class="bg-grey-50">
+          <div class="container py-16 md:py-20" id="services">
+            <h2 class="text-center font-header text-4xl font-semibold text-primary sm:text-5xl lg:text-6xl">
+              Here's what I'm good at.
+            </h2>
+            <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+              These are my areas of expertise.
+            </h3>
+
+            <div class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+              <div class="group rounded px-8 py-12 shadow-xl hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                  <div class="hidden group-hover:block">
+                    <img src="./assets/img/icon-development-white.svg" alt="development icon" />
+                  </div>
+                  <div class="block group-hover:hidden">
+                    <img src="./assets/img/icon-development-black.svg" alt="development icon" />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                    Web Development
+                  </h3>
+                  <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                    My experience with multiple frameworks ensure I can take projects from idea to reality, choosing the
+                    tool that best fits the job.
+                  </p>
+                </div>
+              </div>
+              <div class="group rounded px-8 py-12 shadow-xl hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                  <div class="hidden group-hover:block">
+                    <img src="./assets/img/icon-content-white.svg" alt="content marketing icon" />
+                  </div>
+                  <div class="block group-hover:hidden">
+                    <img src="./assets/img/icon-content-black.svg" alt="content marketing icon" />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                    Wordpress Management
+                  </h3>
+                  <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                    From theme development and plugin management to full site creations, I have experience building
+                    WordPress sites across multiple industries.
+                  </p>
+                </div>
+              </div>
+              <div class="group rounded px-8 py-12 shadow-xl hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                  <div class="hidden group-hover:block">
+                    <img src="./assets/img/icon-mobile-white.svg" alt="Mobile Application icon" />
+                  </div>
+                  <div class="block group-hover:hidden">
+                    <img src="./assets/img/icon-mobile-black.svg" alt="Mobile Application icon" />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                    Responsive Design
+                  </h3>
+                  <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                    My knowledge in Human-Computer Interaction helps me develop products that focus on the user's
+                    environment, whether they be on a phone, a tablet, a desktop - or even a smart refrigerator. ;)
+                  </p>
+                </div>
+              </div>
+              <div class="group rounded px-8 py-12 shadow-xl hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                  <div class="hidden group-hover:block">
+                    <img src="./assets/img/icon-email-white.svg" alt="Email Marketing icon" />
+                  </div>
+                  <div class="block group-hover:hidden">
+                    <img src="./assets/img/icon-email-black.svg" alt="Email Marketing icon" />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                    Email Development
+                  </h3>
+                  <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                    From the most basic HTML email template to advanced layouts in MJML, I have experience creating
+                    various marketing and internal email designs.
+                  </p>
+                </div>
+              </div>
+              <div class="group rounded px-8 py-12 shadow-xl hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                  <div class="hidden group-hover:block">
+                    <img src="./assets/img/icon-design-white.svg" alt="Theme Design icon" />
+                  </div>
+                  <div class="block group-hover:hidden">
+                    <img src="./assets/img/icon-design-black.svg" alt="Theme Design icon" />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                    Marketing & SEO
+                  </h3>
+                  <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                    Utilizing tools like Structured Schema Data, Google Search Console/Analytics and ActiveCampaign,
+                    finding ways to harness prospective traffic goes hand in hand with good UX.
+                  </p>
+                </div>
+              </div>
+              <div class="group rounded px-8 py-12 shadow-xl hover:bg-primary">
+                <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
+                  <div class="hidden group-hover:block">
+                    <img src="./assets/img/icon-graphics-white.svg" alt="Graphic Design icon" />
+                  </div>
+                  <div class="block group-hover:hidden">
+                    <img src="./assets/img/icon-graphics-black.svg" alt="Graphic Design icon" />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <h3 class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl">
+                    UX/UI Design
+                  </h3>
+                  <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
+                    My educational and development backgrounds help me stay human-first in my design philosophy, whether
+                    it be working with mockups in Adobe XD or testing already-built platforms.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="bg-grey-60">
-  <div class="container py-16 md:py-20" id="contact">
-    <h2
-      class="text-center font-header text-4xl font-semibold text-primary sm:text-5xl lg:text-6xl"
-    >
-      Contact Me.
-    </h2>
-    <h4
-      class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-    >
-      Have Any Questions?
-    </h4>
-    <div class="mx-auto w-full pt-5 text-center sm:w-2/3 lg:pt-6">
-      <p class="font-body text-grey-10">
-        I'd love to hear from you! Feel free to reach out to me via one of the methods below.
-      </p>
-    </div>
+        <div class="bg-grey-60">
+          <div class="container py-16 md:py-20" id="portfolio">
+            <h2 class="text-center font-header text-4xl font-semibold text-primary sm:text-5xl lg:text-6xl">
+              Here's My Portfolio.
+            </h2>
+            <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+              These are some examples of my past work.
+            </h3>
 
-    <div class="flex flex-col pt-16 lg:flex-row">
-      <div class="w-full px-6 py-6 sm:py-8 lg:w-1/2">
-        <div class="flex justify-center">
-          <i class="bx bxl-linkedin text-2xl text-grey-20"></i>
-          <p class="pl-2 font-body font-bold text-grey-20 lg:text-lg">
-            Message Me on LinkedIn!
-          </p>
+            <div class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
+              <a href="https://foxbox.io/" target="_blank" rel="noopener noreferrer"
+                class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+                <img src="./assets/img/portfolio/foxbox_compressed.png" class="w-full shadow-2xl"
+                  alt="portfolio image" />
+              </a>
+              <a href="https://itsupportguys.com/" target="_blank" rel="noopener noreferrer"
+              class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+              <img src="./assets/img/portfolio/itsg_compressed.png" class="w-full shadow-2xl" alt="portfolio image" />
+            </a>
+              <a href="https://app.campizza.com/" target="_blank" rel="noopener noreferrer"
+                class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+                <img src="./assets/img/portfolio/app_campizza_compressed.png" class="w-full shadow-2xl"
+                  alt="portfolio image" />
+              </a>
+              <a href="https://qt.itsupportguys.com/" target="_blank" rel="noopener noreferrer"
+              class="mx-auto transform transition-all hover:scale-105 md:mx-0">
+              <img src="./assets/img/portfolio/qt_itsg_compressed.png" class="w-full shadow-2xl"
+                alt="portfolio image" />
+            </a>
+            </div>
+          </div>
         </div>
-        <p class="pt-2 text-center font-body font-bold text-primary lg:text-lg">
-          <a href="https://linkedin.com/in/RyanZahrae" target="_blank" >https://linkedin.com/in/RyanZahrae</a>
-        </p>
-      </div>
-      <div
-        class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/2 lg:border-l-0 lg:border-t-2"
-      >
-        <div class="flex justify-center">
-          <i class="bx bx-envelope text-2xl text-grey-40"></i>
-          <p class="pl-2 font-body font-bold text-grey-40 lg:text-lg">
-            Email Me!
-          </p>
+
+        <div class="bg-grey-50 py-16 md:py-20" id="work">
+          <h2 class="text-center font-header text-4xl font-semibold text-primary sm:text-5xl lg:text-6xl">
+            Here's My Work Experience.
+          </h2>
+          <h3 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+            These are some of my past works.
+          </h3>
+
+          <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
+            <span class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"></span>
+
+            <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+              <div class="md:w-2/5">
+                <div class="flex justify-center md:justify-start">
+                  <span class="shrink-0">
+                    <img src="./assets/img/itsg_alt_logo.png" class="h-auto w-32" alt="company logo" />
+                  </span>
+                  <div class="relative ml-3 hidden w-full md:block">
+                    <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-3/5">
+                <div class="relative flex md:pl-18">
+                  <span
+                    class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+
+                  <div class="mt-1 flex">
+                    <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+                    <div class="md:-mt-1 md:pl-8">
+                      <span class="block font-body font-bold text-grey-40">May 2020 - Current</span>
+                      <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">UI/UX/Web
+                        Developer</span>
+                      <div class="pt-2">
+                        <ul class="list-disc block font-body text-black">
+                          <li>Overhauled company website to achieve record SEO ratings and traffic YOY, increasing speed
+                            metrics by nearly 80%.</li>
+                          <li>Spearheaded projects to improve internal processes and ticketing questionnaires between
+                            both external clients and internal employees.</li>
+                          <li>Handled all front-end development of a new, ground-up price quoting platform that brought
+                            in new leads and potential customers while providing the company more information up front
+                            about a client's needs.</li>
+                          <li>Developed front-end interfaces for an internal call transcription platform for usage by
+                            the company's Help Desk.</li>
+                          <li>Managed company CRM and automations for following up and engaging with potential leads.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+              <div class="md:w-2/5">
+                <div class="flex justify-center md:justify-start">
+                  <span class="shrink-0">
+                    <img src="./assets/img/codenko_logo.png" class="h-auto w-32" alt="company logo" />
+                  </span>
+                  <div class="relative ml-3 hidden w-full md:block">
+                    <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-3/5">
+                <div class="relative flex md:pl-18">
+                  <span
+                    class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+
+                  <div class="mt-1 flex">
+                    <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+                    <div class="md:-mt-1 md:pl-8">
+                      <span class="block font-body font-bold text-grey-40">2017 - 2021</span>
+                      <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">Web Developer,
+                        UI/UX</span>
+                      <div class="pt-2">
+                        <ul class="list-disc block font-body text-black">
+                          <li>Developed and maintained multiple projects for clients ranging from full website
+                            development, redesigns, performance load-time modifications and migrations.</li>
+                          <li>Used prototyping software/Agile processes to quickly iterate on ideas and designs based on
+                            client feedback and direction.</li>
+                          <li>Produced documentation on projects involving user flows, personas, storyboards, etc. for
+                            presentation internally and to clients.</li>
+                          <li>Worked with multiple teams to develop verbiage that would allow for increased web
+                            visibility and SEO performance.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
+              <div class="md:w-2/5">
+                <div class="flex justify-center md:justify-start">
+                  <span class="shrink-0">
+                    <img src="./assets/img/foxbox_logo.png" class="h-auto w-32" alt="company logo" />
+                  </span>
+                  <div class="relative ml-3 hidden w-full md:block">
+                    <span class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="md:w-3/5">
+                <div class="relative flex md:pl-18">
+                  <span
+                    class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"></span>
+
+                  <div class="mt-1 flex">
+                    <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
+                    <div class="md:-mt-1 md:pl-8">
+                      <span class="block font-body font-bold text-grey-40">Feb 2015 - Current
+                      </span>
+                      <span class="block pt-2 font-header text-xl font-bold uppercase text-primary">
+                        UI Design & Service/Logistics
+                      </span>
+                      <div class="pt-2">
+                        <ul class="list-disc block font-body text-black">
+                          <li>Oversaw multiple support online channels and help-desk services (Zendesk, E-Mail, Discord,
+                            Twitter, Facebook, Shopify) to bring an exceptional quality of customer support & issue
+                            mitigation.</li>
+                          <li>Assisted with UI, UX, and CSS issues in site build and updates.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="pt-2 text-center font-body font-bold text-primary lg:text-lg">
-          ryan [at] ryanzahrae [dot] com
-        </p>
+
+        <div class="bg-grey-60">
+          <div class="container py-16 md:py-20" id="contact">
+            <h2 class="text-center font-header text-4xl font-semibold text-primary sm:text-5xl lg:text-6xl">
+              Contact Me.
+            </h2>
+            <h4 class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
+              Have Any Questions?
+            </h4>
+            <div class="mx-auto w-full pt-5 text-center sm:w-2/3 lg:pt-6">
+              <p class="font-body text-grey-10">
+                I'd love to hear from you! Feel free to reach out to me via one of the methods below.
+              </p>
+            </div>
+
+            <div class="flex flex-col pt-16 lg:flex-row">
+              <div class="w-full px-6 py-6 sm:py-8 lg:w-1/2">
+                <div class="flex justify-center">
+                  <i class="bx bxl-linkedin text-2xl text-grey-20"></i>
+                  <p class="pl-2 font-body font-bold text-grey-20 lg:text-lg">
+                    Message Me on LinkedIn!
+                  </p>
+                </div>
+                <p class="pt-2 text-center font-body font-bold text-primary lg:text-lg">
+                  <a href="https://linkedin.com/in/RyanZahrae" target="_blank">https://linkedin.com/in/RyanZahrae</a>
+                </p>
+              </div>
+              <div
+                class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/2 lg:border-l-0 lg:border-t-2">
+                <div class="flex justify-center">
+                  <i class="bx bx-envelope text-2xl text-grey-40"></i>
+                  <p class="pl-2 font-body font-bold text-grey-40 lg:text-lg">
+                    Email Me!
+                  </p>
+                </div>
+                <p class="pt-2 text-center font-body font-bold text-primary lg:text-lg">
+                  ryan [at] ryanzahrae [dot] com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
-  </div>
-</div>
 
-</div>
-
-<div class="bg-primary">
-  <div class="container flex flex-col justify-between py-6 sm:flex-row">
-    <p class="text-center font-body text-white md:text-left">
-      © Copyright Ryan Zahrae 2023. All rights reserved.
-    </p>
-    <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
-      <a href="https://linkedin.com/in/RyanZahrae" target="_blank" rel="noopener noreferrer" class="pl-4">
-        <i class="bx bxl-linkedin text-2xl text-white hover:text-blue"></i>
-      </a>
-      <a @click="triggerNavItem('#contact')" class="pl-4">
-        <i class="bx bx-envelope text-2xl text-white hover:text-blue"></i>
-      </a>
-    </div>
-  </div>
-</div>
+      <div class="bg-primary">
+        <div class="container flex flex-col justify-between py-6 sm:flex-row">
+          <p class="text-center font-body text-white md:text-left">
+            © Copyright Ryan Zahrae 2023. All rights reserved.
+          </p>
+          <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
+            <a href="https://linkedin.com/in/RyanZahrae" target="_blank" rel="noopener noreferrer" class="pl-4">
+              <i class="bx bxl-linkedin text-2xl text-white hover:text-blue"></i>
+            </a>
+            <a @click="triggerNavItem('#contact')" class="pl-4">
+              <i class="bx bx-envelope text-2xl text-white hover:text-blue"></i>
+            </a>
+          </div>
+        </div>
+      </div>
 
     </div>
 
     <script src="./assets/js/main.js"></script>
 
-    
-  </body>
+
+</body>
+
 </html>
